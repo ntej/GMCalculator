@@ -8,192 +8,189 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_main">
 
     <TextView
-        android:id="@+id/infoTextView"
+        android:id="@+id/resultTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:textSize="30sp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/infoTextView"
+        android:layout_alignEnd="@id/buttonNine"
+        android:layout_alignRight="@id/buttonNine"
+        android:layout_alignStart="@+id/buttonSeven"
+        android:background="#ffffff"
         android:enabled="false"
         android:gravity="bottom"
         android:lines="2"
         android:maxLines="2"
-        android:textSize="20sp" />
+        android:textSize="@dimen/expression_text_size"
+        android:textColor="#000"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="@dimen/clear_button_width"
+        android:layout_height="@dimen/clear_button_height"
+        android:layout_above="@+id/buttonNine"
+        android:layout_toEndOf="@+id/resultTextView"
+        android:layout_toRightOf="@+id/resultTextView"
+        android:text="C"
+        android:textSize="@dimen/clear_text_size"
+        android:layout_margin="@dimen/buttons_gap_margin"/>
 
     <Button
         android:id="@+id/buttonSeven"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/resultTextView"
         android:text="7"
-        android:textSize="@dimen/number_text_size" />
+        android:textSize="@dimen/number_text_size"
+        android:layout_margin="@dimen/buttons_gap_margin"/>
 
     <Button
         android:id="@+id/buttonEight"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_below="@id/editText"
-        android:layout_toRightOf="@id/buttonSeven"
+        android:layout_above="@+id/buttonFour"
+        android:layout_alignStart="@+id/buttonZero"
         android:text="8"
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonNine"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_below="@id/editText"
-        android:layout_toRightOf="@id/buttonEight"
+        android:layout_above="@+id/buttonSix"
+        android:layout_alignStart="@+id/buttonSix"
         android:text="9"
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonFour"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
         android:layout_below="@id/buttonSeven"
         android:text="4"
-        android:textSize="@dimen/number_text_size" />
+        android:textSize="@dimen/number_text_size"
+        android:layout_margin="@dimen/buttons_gap_margin"/>
 
     <Button
         android:id="@+id/buttonFive"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_alignRight="@id/buttonEight"
-        android:layout_below="@id/buttonEight"
+        android:layout_above="@+id/buttonThree"
+        android:layout_toEndOf="@+id/buttonFour"
         android:text="5"
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonSix"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_alignRight="@id/buttonNine"
-        android:layout_below="@id/buttonNine"
+        android:layout_above="@+id/buttonThree"
+        android:layout_toEndOf="@+id/buttonFive"
         android:text="6"
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonOne"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_below="@id/buttonFour"
+        android:layout_alignStart="@+id/buttonFour"
+        android:layout_below="@+id/buttonFour"
         android:text="1"
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonTwo"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_alignRight="@id/buttonEight"
-        android:layout_below="@id/buttonFive"
+        android:layout_below="@+id/buttonSix"
+        android:layout_toEndOf="@+id/buttonOne"
         android:text="2"
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonThree"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_alignRight="@id/buttonNine"
-        android:layout_below="@id/buttonSix"
+        android:layout_above="@+id/buttonZero"
+        android:layout_alignStart="@+id/buttonEqual"
         android:text="3"
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonDot"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_below="@id/buttonOne"
+        android:layout_alignStart="@+id/buttonOne"
+        android:layout_below="@+id/buttonSubtract"
         android:text="."
         android:textSize="@dimen/number_text_size" />
 
     <Button
         android:id="@+id/buttonZero"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/number_button_width"
         android:layout_height="@dimen/number_button_height"
-        android:layout_alignRight="@id/buttonEight"
-        android:layout_below="@id/buttonTwo"
+        android:layout_below="@+id/buttonOne"
+        android:layout_toEndOf="@+id/buttonOne"
+        android:layout_toRightOf="@+id/buttonOne"
         android:text="0"
-        android:textSize="@dimen/number_text_size" />
+        android:textSize="@dimen/number_text_size"
+        android:layout_margin="@dimen/buttons_gap_margin"/>
 
     <Button
         android:id="@+id/buttonEqual"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="@dimen/equal_button_width"
-        android:layout_height="@dimen/equal_button_height"
-        android:layout_alignRight="@id/buttonNine"
-        android:layout_below="@id/buttonThree"
+        android:layout_width="@dimen/symbol_button_width"
+        android:layout_height="@dimen/symbol_button_height"
+        android:layout_below="@+id/buttonOne"
+        android:layout_toEndOf="@+id/buttonFive"
         android:text="="
-        android:textSize="@dimen/equal_text_size" />
+        android:textSize="@dimen/symbol_text_size" />
 
     <Button
         android:id="@+id/buttonDivide"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/symbol_button_width"
         android:layout_height="@dimen/symbol_button_height"
-        android:layout_alignTop="@id/buttonNine"
         android:layout_toRightOf="@id/buttonNine"
+        android:layout_below="@id/buttonClear"
         android:text="/"
-        android:textSize="20sp" />
+        android:textSize="@dimen/symbol_text_size"
+        android:layout_margin="@dimen/buttons_gap_margin"
+        />
 
     <Button
         android:id="@+id/buttonMultiply"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/symbol_button_width"
         android:layout_height="@dimen/symbol_button_height"
-        android:layout_alignTop="@id/buttonSix"
-        android:layout_toRightOf="@id/buttonSix"
+        android:layout_above="@+id/buttonThree"
+        android:layout_alignStart="@+id/buttonSubtract"
         android:text="*"
-        android:textSize="20sp" />
+        android:textSize="@dimen/symbol_text_size" />
 
     <Button
         android:id="@+id/buttonSubtract"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/symbol_button_width"
         android:layout_height="@dimen/symbol_button_height"
         android:layout_alignTop="@id/buttonThree"
         android:layout_toRightOf="@id/buttonThree"
         android:text="-"
-        android:textSize="20sp" />
+        android:textSize="@dimen/symbol_text_size"
+        android:layout_margin="@dimen/buttons_gap_margin"
+        />
 
     <Button
         android:id="@+id/buttonAdd"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/symbol_button_width"
+        android:layout_height="@dimen/symbol_button_height"
         android:layout_alignTop="@id/buttonEqual"
         android:layout_toRightOf="@id/buttonEqual"
         android:text="+"
-        android:textSize="20sp" />
+        android:textSize="@dimen/symbol_text_size"
+        android:layout_margin="@dimen/buttons_gap_margin"
+        />
 
-    <Button
-        android:id="@+id/buttonClear"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@id/buttonAdd"
-        android:layout_below="@id/buttonAdd"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="C"
-        android:textSize="20sp" />
 </RelativeLayout>

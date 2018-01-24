@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
 
     <!--Numbered button dimens-->
-    <dimen name="number_button_height">120dp</dimen>
+    <dimen name="number_button_height">100dp</dimen>
     <dimen name="number_button_width">300dp</dimen>
     <dimen name="number_text_size">40sp</dimen>
 
-    <!--equal button dimens-->
-    <dimen name="equal_button_height">120dp</dimen>
-    <dimen name="equal_button_width">300dp</dimen>
-    <dimen name="equal_text_size">40sp</dimen>
 
-    <!--aother symbols dimens-->
-    <dimen name="symbol_button_height">120dp</dimen>
+    <!--aother symbols  dimens-->
+    <dimen name="symbol_button_height">100dp</dimen>
     <dimen name="symbol_button_width">300dp</dimen>
     <dimen name="symbol_text_size">40sp</dimen>
+
+    <!-- clear  dimens-->
+    <dimen name="clear_button_height">120dp</dimen>
+    <dimen name="clear_button_width">300dp</dimen>
+    <dimen name="clear_text_size">40sp</dimen>
+
+    <!--expression Edittext-->
+    <dimen name="expression_text_size">40sp</dimen>
+
+    <!--result Edittext-->
+    <dimen name="result_text_size">40sp</dimen>
+
+    <dimen name="buttons_gap_margin">5dp</dimen>
+
 
 </resources>
